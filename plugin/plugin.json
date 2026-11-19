@@ -1,0 +1,20 @@
+{
+  "api": 1,
+  "name": "misurazione",
+  "title": "Misurazione",
+  "description": "Google Analytics 4 e Pixel di Meta con Consent Mode v2, e i clic su telefono, WhatsApp, email e mappe come eventi.",
+  "version": "1.0.0",
+  "requires": {"kris": "2.0.0", "php": "8.3", "extensions": []},
+  "settings": [
+    {"name": "ga4_id", "type": "text", "localized": false, "description": "ID di misurazione di Google Analytics 4 (G-XXXXXXXXXX)", "section": "Google Analytics"},
+    {"name": "meta_pixel_id", "type": "text", "localized": false, "description": "ID del Pixel di Meta (solo cifre)", "section": "Meta"},
+    {"name": "contact_events", "type": "boolean", "localized": false, "description": "Registra come eventi i clic su telefono, WhatsApp, email e mappe", "section": "Eventi"}
+  ],
+  "hooks": ["head", "body_end"],
+  "cookies": [
+    {"name": "_ga", "duration": "2 anni", "provider": "Google Ireland Ltd.", "category": "statistics", "purpose": "Distingue i visitatori per le statistiche di Google Analytics"},
+    {"name": "_ga_<ID>", "duration": "2 anni", "provider": "Google Ireland Ltd.", "category": "statistics", "purpose": "Mantiene lo stato della sessione di Google Analytics"},
+    {"name": "_fbp", "duration": "3 mesi", "provider": "Meta Platforms Ireland Ltd.", "category": "marketing", "purpose": "Misura le visite arrivate dalle inserzioni di Meta"}
+  ],
+  "domains": ["www.googletagmanager.com", "www.google-analytics.com", "region1.google-analytics.com", "connect.facebook.net", "www.facebook.com"]
+}
