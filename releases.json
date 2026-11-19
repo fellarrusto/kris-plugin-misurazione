@@ -1,0 +1,17 @@
+{
+    "format": 1,
+    "releases": [
+        {
+            "version": "1.0.0",
+            "zip": "https://github.com/fellarrusto/kris-plugin-misurazione/releases/download/v1.0.0/misurazione-1.0.0.zip",
+            "sha256": "e1fabed518e69422dbcc42e41bb8d3dd38513b8dd5684934203d406b260df7d3",
+            "size": 3589,
+            "requires": {
+                "kris": "2.0.0",
+                "php": "8.3"
+            },
+            "changelog_it": "Prima versione: GA4 e Pixel di Meta con Consent Mode v2, eventi di contatto.",
+            "date": "2026-11-19"
+        }
+    ]
+}
